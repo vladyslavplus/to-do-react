@@ -1,0 +1,49 @@
+.Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9; 
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.Todo:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.Todo p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer; 
+    transition: color 0.3s ease;
+
+    user-select: none;
+}
+
+.completed {
+    text-decoration: line-through; 
+    color: #a0a0a0; 
+    opacity: 0.7; 
+}
+
+.TodoIcons {
+    display: flex;
+    gap: 10px; 
+}
+
+.TodoIcons svg {
+    cursor: pointer;
+    color: #4caf50;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.TodoIcons svg:hover {
+    color: #45a049; 
+    transform: scale(1.2); 
+}
